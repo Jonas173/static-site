@@ -43,7 +43,7 @@ p {
     border-radius: 10px;
 }
 
-@media (min-width: 55em){
+@media (min-width: 75em){
     .gridContainer{
         grid-auto-flow: column;
     }
