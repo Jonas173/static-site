@@ -1,0 +1,97 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    background-color: #faf6ea;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-family: "consolas", "Lucida Console", "Courier New", monospace;
+}
+
+p {
+    padding: 0px 15px 0px 15px;
+    text-align: justify;
+    font-family: "consolas", "Lucida Console", "Courier New", monospace;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flexItem {
+    display: flex;
+}
+
+@media only screen and (min-width: 600px) {
+    .gridContainer {
+        padding: 10px;
+        display: grid;
+        column-gap: 100px;
+        grid-auto-columns: minmax(0, 1fr);
+        grid-auto-flow: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .gridContainer {
+        padding: 10px;
+        display: grid;
+        column-gap: 100px;
+        grid-auto-flow: row;
+    }
+}
+
+.gridColumn {
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#web {
+    background-color: #a77282;
+}
+
+#web * {
+    background-color: #a77282;
+}
+
+#desktop {
+    background-color: #c4f1ff;
+}
+
+#desktop * {
+    background-color: #c4f1ff;
+    word-wrap: normal;
+}
+
+#ghIcon {
+    width: 35px;
+}
+
+#csicon {
+    color: red;
+    padding: 15px;
+    width: 70px;
+}
+
+#jsicon {
+    padding: 10px;
+    width: 80px;
+}
+
+.credit {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+}
