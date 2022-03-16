@@ -30,7 +30,7 @@ p {
     display: flex;
 }
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 20cm) {
     .gridContainer {
         padding: 10px;
         display: grid;
@@ -40,7 +40,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 20cm) {
     .gridContainer {
         padding: 10px;
         display: grid;
