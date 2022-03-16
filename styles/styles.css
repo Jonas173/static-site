@@ -34,14 +34,19 @@ p {
     padding: 10px;
     display: grid;
     column-gap: 100px;
-    justify-content: space-evenly;
-    grid-template-columns: repeat(auto-fill, 400px);
+    grid-auto-flow: row;
 }
 
 .gridColumn {
     margin-top: 50px;
     text-align: center;
     border-radius: 10px;
+}
+
+@media (min-width: 55em){
+    .gridContainer{
+        grid-auto-flow: column;
+    }
 }
 
 #web {
