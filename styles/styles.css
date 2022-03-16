@@ -1,5 +1,5 @@
 * {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
     background-color: #faf6ea;
     color: black;
@@ -30,23 +30,12 @@ p {
     display: flex;
 }
 
-@media (min-width: 20cm) {
-    .gridContainer {
-        padding: 10px;
-        display: grid;
-        column-gap: 100px;
-        grid-auto-columns: minmax(0, 1fr);
-        grid-auto-flow: column;
-    }
-}
-
-@media (max-width: 20cm) {
-    .gridContainer {
-        padding: 10px;
-        display: grid;
-        column-gap: 100px;
-        grid-auto-flow: row;
-    }
+.gridContainer {
+    padding: 10px;
+    display: grid;
+    column-gap: 100px;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fill, 400px);
 }
 
 .gridColumn {
