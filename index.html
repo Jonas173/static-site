@@ -2,23 +2,23 @@
 <html lang="en">
 
 <head>
-    <title>
-        👨🏻‍💻 Jon's IT
-    </title>
+    <title>Jonas Schultz IT</title>
     <link rel="icon" href="./resources/laptop.png">
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="./scripts/index.js"></script>
 </head>
 
 <body>
-    <div class="flexContainer">
-        <img onclick="directToGH()" class="flexItem" id="ghIcon" src="./resources/GitHub-Mark-120px-plus.png"
-            title="GitHub Icon">
+    <div id="navbar" class="flexContainer">
+        <a href="https://github.com/Jonas173" target="popup" id="github-link">
+            GitHub
+        </a>
     </div>
-    <h1 id="heading">Welcome to my first site!</h1>
-    <div class="gridContainer">
+    <div id="welcomeDiv">
+        <h1 id="heading">"Need a web developer?"</h1>
+    </div>
+    <div id="main" class="gridContainer">
         <div class="gridColumn" id="desktop">
-            <img id="csicon" src="./resources/cs.svg" title="C# Icon">
             <h2>Experienced in Desktop...</h2>
             <p>
                 Having worked as a C# developer since January of 2020, I have experience in creating professional
@@ -26,7 +26,6 @@
             </p>
         </div>
         <div class="gridColumn" id="web">
-            <img id="jsicon" src="./resources/js.svg" title="Javascript Icon">
             <h2>...curious about the Web</h2>
             <p>
                 Recently coming in contact with Blazor WebAssembly, I'm set on teaching myself web development. I've
@@ -35,11 +34,16 @@
             </p>
         </div>
     </div>
+    <div id="footer">
+        <h1>Want to see more?</h1>
+        <p>I've recently started developing a frontend for a mock e-shop, which is realised as a single page application
+            via React.js.</p>
+        <p>The code is available <a href="https://github.com/Jonas173/e-shopping-front" target="popup" id="react-link">here</a>.</p>
+    </div>
     <div id="footer" class="gridContainer">
         <ul>
         </ul>
     </div>
-    <h2>More coming soon!</h2>
 </body>
 
 </html>
