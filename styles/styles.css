@@ -1,25 +1,48 @@
 * {
-    font-family: Segoe UI, Arial, system-ui,-apple-system,Roboto,Helvetica,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    font-family: "korolev", Helvetica, Arial, sans-serif !important;
     padding: 0;
     margin: 0;
     color: black;
 }
 
 h1 {
+    font-size: 3.5rem;
     text-align: center;
 }
 
 h2 {
+    font-size: 3rem;
     text-align: center;
-    font-family: "consolas", "Lucida Console", "Courier New", monospace;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 p {
-    padding: 0px 15px 0px 15px;
-    text-align: justify;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.about-me h2{
+    font-family: "korolev", Helvetica, Arial, sans-serif !important;
+    font-style: normal;
+}
+
+.about-me{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 140px;
+    min-width: 200px;
+    max-width: 40%;
+}
+
+.about-me * {
+    font-family: "korolev", Helvetica, Arial, sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    text-align: left;
+}
+
+.about-me p {
+    margin-top: 20px;
 }
 
 #github-link{
@@ -49,6 +72,7 @@ p {
 
 #footer{
     margin-top: 50px;
+    margin-bottom: 150px;
 }
 
 #footer *{
@@ -76,13 +100,58 @@ p {
     grid-auto-flow: row;
 }
 
-.gridColumn {
+.row{
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: left;
+}
+
+#person{
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.hello-my-name {
     margin-top: 50px;
+    transform: rotate(-5deg); 
+    background-color: rgb(238, 41, 84);
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    min-width: 400px;
+    max-width: 400px;
+    max-height: 215px;
+}
+
+.hello-my-name * {
+    color: white;
     text-align: center;
-    box-shadow:  0px 0px 2px 2px #efefef;
+}
+
+.hello-my-name div {
+    background-color: white;
+    height: 100px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#name{
+    color: rgb(30,30,30);
+    font-family: cursive;
 }
 
 @media (min-width: 75em){
+    .row {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: left;
+    }
+
     .gridContainer{
         grid-auto-flow: column;
     }
